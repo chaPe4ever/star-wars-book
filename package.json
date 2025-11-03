@@ -1,0 +1,16 @@
+{
+  "name": "star-wars-book",
+  "version": "1.0.0",
+  "description": "Star Wars Book",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:css",
+    "start-server": "npx live-server --port=5555 --no-browser",
+    "start-all": "npm run sass & npm run start-server"
+  },
+  "author": "Petros Chatzipetrou",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.93.3"
+  }
+}

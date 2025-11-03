@@ -1,0 +1,9 @@
+@use "variables/radius";
+@use "variables/sizes";
+
+@mixin button-base {
+  border-radius: $pill;
+  padding: $xs $s;
+  min-width: 120px;
+  min-height: 35px;
+}

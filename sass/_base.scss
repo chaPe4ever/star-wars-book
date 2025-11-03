@@ -1,0 +1,23 @@
+@use "variables/fonts";
+@use "variables/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  background-color: $bg-color;
+  width: 100vw;
+}
+
+.loader {
+  color: $text-color;
+}
+.error-msg {
+  color: $text-color;
+}

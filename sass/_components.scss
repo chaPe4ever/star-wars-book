@@ -1,0 +1,32 @@
+@use "mixins";
+@use "variables/colors";
+@use "variables/radius";
+@use "variables/sizes";
+
+@mixin primary-btn {
+  @include button-base;
+  color: $text-color;
+  border: 1px solid $bg-inverted;
+  background-color: $bg-color;
+  cursor: pointer;
+}
+
+@mixin primary-card {
+  background-color: $bg-secondary;
+  border: 1px solid $black-light;
+  border-radius: $r-l;
+  padding: $gap20;
+  margin-bottom: $gap15;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@mixin primary-header {
+  border-radius: $r-s;
+  font-weight: $font-bold;
+  font-size: $font-size-header;
+  background: $bg-secondary;
+  margin-bottom: $gap20;
+  color: $brand-color;
+  padding-bottom: $gap10;
+}

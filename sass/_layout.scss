@@ -1,0 +1,55 @@
+@use "variables/sizes";
+@use "variables/colors";
+@use "variables/fonts";
+@use "mixins";
+
+.main-container {
+  width: 100%;
+  display: flex;
+  padding: $gap5 $gap10;
+  justify-content: space-evenly;
+  gap: $gap10;
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      @include primary-header;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      padding: $gap10;
+      white-space: nowrap;
+    }
+
+    .card-container {
+      @include primary-card;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      gap: $gap10;
+      color: $text-color;
+
+      .card-title {
+        font-size: $font-size-subheader;
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: $text-color-secondary;
+      }
+
+      &.selected {
+        border: 2px solid $brand-color;
+        background-color: $black-light;
+      }
+
+      .card-btn {
+        @include primary-btn;
+      }
+    }
+  }
+}
