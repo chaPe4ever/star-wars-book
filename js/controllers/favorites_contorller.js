@@ -29,6 +29,8 @@ export default class FavoritesController {
         },
       });
 
+      favoriteCard.classList.add("inline");
+
       this.favoritesSection.appendChild(favoriteCard);
     });
   }

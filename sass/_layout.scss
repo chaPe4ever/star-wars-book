@@ -47,8 +47,23 @@
         background-color: $black-light;
       }
 
+      &.inline {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       .card-btn {
         @include primary-btn;
+
+        &:hover {
+          background-color: $black-light;
+          cursor: pointer;
+        }
+      }
+
+      &:hover {
+        background-color: $black-light;
+        cursor: pointer;
       }
     }
   }
